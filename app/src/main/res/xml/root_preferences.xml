@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditTextPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:defaultValue="@string/settings_news_url_default"
+        android:key="@string/settings_news_url_key"
+        android:title="News Feed URL"
+        android:summary="Change the URL of your news feed." />
+    <CheckBoxPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="false"
+        android:title="Show images"
+        android:summaryOff="Images will not be displayed."
+        android:summaryOn="Images will be displayed."
+        app:key="showImages" />
+
+
+</PreferenceScreen>
